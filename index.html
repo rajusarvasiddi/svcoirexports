@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Coir products manufacturers in India - SV Coir Exports</title>
+<link href="css/reset.css" type="text/css" rel="stylesheet" />
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href="css/anylinkcssmenu.css" type="text/css" rel="stylesheet" />
+
+<style type="text/css">
+#slideshow {
+	margin:0 auto !important;
+	position:relative;
+	width:920px;}
+
+#slideshow #slideshowWindow {
+	width:920px;
+	height:280px;
+	margin:0;
+	padding:0;
+	position:relative;
+	overflow:hidden;
+}
+
+#slideshow #slideshowWindow .slide {
+	margin:0;
+	padding:0;
+	width:920px; 
+	height:280px;
+	position:relative;
+}
+
+#slideshow #slideshowWindow .slide .slideText {
+	position:absolute;
+	top:130px;
+	left:0px;
+	width:100%;
+	height:130px;
+	background-image:url(greyBg.png);
+	background-repeat:repeat;
+	margin:0;
+	padding:0;
+	color:#ffffff;
+	font-family:Myriad Pro, Arial, Helvetica, sans-serif;
+}
+
+#slideshow #slideshowWindow .slide .slideText a:link, #slideshow #slideshowWindow .slide .slideText a:visited {
+	color:#ffffff;
+	text-decoration:none;
+}
+
+#slideshow #slideshowWindow .slide .slideText h2, #slideshow #slideshowWindow .slide .slideText p {
+	margin:10px 0 0 10px;
+	padding:0;
+}
+
+/*Navigation*/
+.nav {
+	display:block;
+	text-indent:-10000px;
+	position:absolute;
+	cursor:pointer;
+}
+
+#leftNav {
+	top:228px;
+	left:350px;
+	width:94px;
+	height:34px;
+	/*background-image:url(previous.png);
+	background-repeat:no-repeat;*/
+	background:#00CC00 !important;
+	color:#FFF !important;
+	display:none;
+	z-index:999;
+}
+
+#rightNav {
+	top:230px;
+	left:450px;
+	width:53px;
+	height:26px;
+	/*background-image:url(next.png);
+	background-repeat:no-repeat;*/
+	background:#FF9900 !important;
+	color:#FFF !important;
+	display:none;
+	z-index:999;
+}
+</style>
+
+<script type="text/javascript" src="scripts/anylinkcssmenu.js"></script>
+<script type="text/javascript">
+	anylinkcssmenu.init("anchorclass")
+</script>
+
+<script type="text/javascript" src="scripts/jquery-latest.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+							   
+		var currentPosition = 0;
+		var slideWidth = 920;
+		var slides = $('.slide');
+		var numberOfSlides = slides.length;
+		var slideShowInterval;
+		var speed = 3000;
+
+		//Assign a timer, so it will run periodically
+		slideShowInterval = setInterval(changePosition, speed);
+		
+		slides.wrapAll('<div id="slidesHolder"></div>')
+		  
+		slides.css({ 'float' : 'left' });
+		
+		//set #slidesHolder width equal to the total width of all the slides
+		$('#slidesHolder').css('width', slideWidth * numberOfSlides);
+		
+		$('#slideshow')
+			.prepend('<span class="nav" id="leftNav">Move Left</span>')
+			.append('<span class="nav" id="rightNav">Move Right</span>');
+		
+		//manageNav(currentPosition);
+		
+		//tell the buttons what to do when clicked
+		$('.nav').bind('click', function() {
+			
+			//determine new position
+			currentPosition = ($(this).attr('id')=='rightNav')
+			? currentPosition+1 : currentPosition-1;
+										
+			//hide/show controls
+			manageNav(currentPosition);
+			clearInterval(slideShowInterval);
+			slideShowInterval = setInterval(changePosition, speed);
+			moveSlide();
+		});
+		
+		function manageNav(position) {
+			//hide left arrow if position is first slide
+			if(position==0){ $('#leftNav').hide() }
+			else { $('#leftNav').show() }
+			//hide right arrow is slide position is last slide
+			if(position==numberOfSlides-1){ $('#rightNav').hide() }
+			else { $('#rightNav').show() }
+		}
+
+		
+		//changePosition: this is called when the slide is moved by the timer and NOT when the next or previous buttons are clicked
+		function changePosition() {
+			if(currentPosition == numberOfSlides - 1) {
+				currentPosition = 0;
+				//manageNav(currentPosition);
+			} else {
+				currentPosition++;
+				//manageNav(currentPosition);
+			}
+			moveSlide();
+		}
+		
+		
+		//moveSlide: this function moves the slide 
+		function moveSlide() {
+				$('#slidesHolder').animate({'marginLeft' : slideWidth*(-currentPosition)});
+		}
+
+	});
+</script>
+</head>
+
+<body>
+<div class="topshade"></div>
+<div class="header">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="hdrTbl">
+		<tr>
+			<td width="26%"><a href="index.html"><img src="images/logo.png" alt="" width="260" height="60" border="0" class="logo" /></a></td>
+			<td width="74%"><table width="100%" border="0" align="right" cellpadding="4" cellspacing="0">
+					<tr>
+						<td><ul class="menu1">
+						<li><a href="about.html">About Us</a></li>
+						<li>|</li>
+						<li><a href="faq.html">FAQs</a></li>
+						<!--<li>|</li>
+						<li><a href="sitemap.html">Sitemap</a></li>-->
+					</ul></td>
+					</tr>
+					<tr>
+						<td><ul class="menu2">
+						<li><a href="about-cocopeat.html">About Cocopeat</a></li>
+						<li>|</li>
+						<li><a class="anchorclass" rel="submenu1">Products</a></li>
+						<li>|</li>
+						<li><a href="quality-control.html">Quality Control</a></li>
+						<li>|</li>
+						<li><a href="manufacturing.html">Manufacturing</a></li>
+						<li>|</li>
+						<!--<li><a href="photo-gallery.html">Photos</a></li>
+						<li>|</li>-->
+						<li><a href="contact.html">Contact</a></li>
+					</ul></td>
+					</tr>
+			</table></td>
+		</tr>
+	</table>
+</div>
+<div class="slideshow">
+	<div id="slideshow">
+     <div id="slideshowWindow">
+    	<div class="slide">
+        	     <img src="images/slide1.jpg" />
+                 <!--<div class="slideText">
+                     <h2 class="slideTitle">Slide 1</h2>
+                     <p class="slideDes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                     <p class="slideLink"><a href="#">click here</a></p>
+                 </div>-->
+		</div>
+        <div class="slide">
+        	 <img src="images/slide2.jpg" />
+				<!--<div class="slideText">
+					 <h2 class="slideTitle">Slide 2</h2>
+					 <p class="slideDes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					 <p class="slideLink"><a href="#">click here</a></p>
+				 </div>-->
+		</div>
+        <div class="slide">
+        	 <img src="images/slide3.jpg" />
+			<!--<div class="slideText">
+				 <h2 class="slideTitle">Slide 3</h2>
+				 <p class="slideDes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				 <p class="slideLink"><a href="#">click here</a></p>
+			 </div>-->
+		</div>
+		<div class="slide"><img src="images/slide4.jpg" /></div>
+		<div class="slide"><img src="images/slide5.jpg" /></div>
+		<div class="slide"><img src="images/slide6.jpg" /></div>
+     </div>
+</div>
+</div>
+<div class="content">
+	
+	<div style="float:left; width:600px; margin:0 0 0 30px;">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td><blockquote>
+					<blockquote>
+						<h2>Our Products: Cocopeat and Coir</h2>
+					</blockquote>
+				</blockquote></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+					<td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+									<td class="homediff"><a href="compressed-cocopeat-bales.html"><img src="images/cocopeat-5kg-CompressedCocoPeatBales.png" width="187" height="119" border="0" /></a></td>
+									<td>&nbsp;</td>
+									<td class="homediff"><a href="coconut-fiber-50kgs.html"><img src="images/cocopeat-fiber.png" width="187" height="119" border="0" /></a></td>
+									<td>&nbsp;</td>
+									<td class="homediff"><a href="coconut-fiber-120kgs.html"><img src="images/cocopeat-fiber-120kgs.png" width="187" height="119" border="0" /></a></td>
+							</tr>
+							<tr>
+									<td colspan="5" style="height:10px;"></td>
+							</tr>
+							<tr>
+									<td valign="top"><p><strong>Compressed Cocopeat Bales:</strong></p>
+											<p>One kilogram of cocopeat will expand to 15 liters of moist cocopeat. 
+													Easy to store bricks have a compression ratio of 7:1 - for expansion of the							fibers, simply soak bricks for less than 30 minutes in a pail of water.</p></td>
+									<td valign="top">&nbsp;</td>
+									<td valign="top"><p><strong>Coconut Fiber 50 kgs:</strong></p>
+											<p>Coconut fiber is used to produce hawsers, ropes, cords, runners, mats, brooms,								brushes, paint brushes and as stuffing for mattresses and upholstered furniture.</p></td>
+									<td valign="top">&nbsp;</td>
+									<td valign="top"><p><strong>Coconut Fiber 120 kgs:</strong></p>
+											<p>Brown fiber extracted from dried coconut husk. Coconut fiber is baled in hydraulic presses to load the containers. Coir fiber can be used to produce cushioning for car seats, sofas, and living room furniture.</p></td>
+							</tr>
+							<tr>
+									<td valign="top">&nbsp;</td>
+									<td valign="top">&nbsp;</td>
+									<td valign="top">&nbsp;</td>
+									<td valign="top">&nbsp;</td>
+									<td valign="top">&nbsp;</td>
+							</tr>
+							<tr>
+									<td class="homediff"><a href="curled-coir.html"><img src="images/curled-coir.png" width="187" height="119" border="0" /></a></td>
+									<td>&nbsp;</td>
+									<td class="homediff"><a href="coir-yarn.html"><img src="images/coir-2-plyr.png" width="187" height="119" border="0" /></a></td>
+									<td>&nbsp;</td>
+									<td class="homediff"><a href="cocopeat-composed.html"><img src="images/cocopeat-composed.png" width="187" height="119" border="0" /></a></td>
+							</tr>
+							<tr>
+									<td colspan="5" style="height:10px;"></td>
+							</tr>
+							<tr>
+									<td valign="top"><p><strong>Curled Coir:</strong></p>
+											<p>Curled Coir is made using matured brown coir fiber, that is in accordance with the industry quality policies. Used in shipping and finishing industries and to produce rubberised coir sheets.</p></td>
+									<td valign="top">&nbsp;</td>
+									<td valign="top"><blockquote>
+											<blockquote>
+													<p><strong>Coir Yarn:</strong></p>
+													<p>Used in matting and carpet industries. It can be customized as per the specific requirement of the clients at the cost effective prices. Also used in Construction, Geo-textiles, Agriculture sector, and packaging industry.</p>
+											</blockquote>
+									</blockquote></td>
+									<td valign="top">&nbsp;</td>
+									<td valign="top"><blockquote>
+											<blockquote>
+													<p><strong>Cocopeat Compost:</strong></p>
+													<p>It is composted for three months to achieve higher cation exchange capacity (CEC). As CEC of organic pattern is due in large part of organic acids and surface area, both of which increase with decomposition, clearly improves the horticultural value.</p>
+											</blockquote>
+									</blockquote></td>
+							</tr>
+					</table></td>
+			</tr>
+			<tr>
+					<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><h1>Where Cocopeat can be used and its advantages/benefits</h1></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><img src="images/img1.png" width="216" height="130" align="left" style="padding-right:15px;" /><strong>Cocopeat</strong> is used for a wide range of hydroponic crop production throughout the world including:					tomato, cucumber, capsicum, zucchini, strawberry, melons, carnation, rose, gerbera, gypsophila, 
+					lisianthus, chrysanthemum etc. <strong>Cocopeat</strong> offers the opportunity to consistently maximize yield and
+quality with minimal environmental impact associated with utilization of this renewable resource. The<br />
+				presence of organic compounds in <strong>Cocopeat</strong> can stimulate root growth and offer natural resistance to				plant disease. <br /></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><h2>Applications of Cocopeat</h2></td>
+			</tr>
+			<tr>
+					<td><ul>
+							<li><img src="images/sprout-bullet.png" width="20" height="20" align="absmiddle" /> <strong>Seed germination:</strong> Sprouting of a seedling from a seed.</li>
+							<li> <img src="images/sprout-bullet.png" width="20" height="20" align="absmiddle" /> <strong>Soil conditioning:</strong> Improve water retention in dry, coarse soils which are not holding water well.</li>
+							<li> <img src="images/sprout-bullet.png" width="20" height="20" align="absmiddle" /> <strong>Plant tissue culture:</strong> Produce clones of the plant in a method known as micropropagation.</li>
+							<li><img src="images/sprout-bullet.png" width="20" height="20" align="absmiddle" /> <strong>Flowers and vegetable beds:</strong> Used in preparing beds by using Cocopeat media.</li>
+							<li><img src="images/sprout-bullet.png" width="20" height="20" align="absmiddle" /> <strong>Potting mix:</strong> Medium to grow plants, herbs, and vegetables in a pot or other durable container.</li>
+							<li><img src="images/sprout-bullet.png" width="20" height="20" align="absmiddle" /> <strong>Mushroom culture:</strong> Used as bedding in Mushroom cultivation.</li>
+							<li><img src="images/sprout-bullet.png" width="20" height="20" align="absmiddle" /> <strong>Golf course:</strong> Used as a top layer in Golf Course construction.</li>
+							<li><img src="images/sprout-bullet.png" width="20" height="20" align="absmiddle" /> <strong>Landscaping:</strong> Modifies the visible features of an area of land.</li>
+							</ul></td>
+			</tr>
+			<tr>
+					<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+	</div>
+	<div style="float:right; width:275px; margin:0 30px 0 0;">
+		<div class="promo"><img src="images/promo.png" width="273" height="117" /></div>
+		<div><h2>Biodegradable Cocopeat</h2>
+		<p>Cocopeat is also known as Coir pith, Coir Fiber pith, Coir dust. It is used as a solid additive, due to low level of nutrition content in the Cocopeat it is mixed with nutrients and used as growing medium for plants.</p>
+		<ul class="homeul">
+			<li><a href="faq.html">What is Cocopeat and its uses?</a></li>
+			<li><a href="faq.html">What is the lead time for orders: Shipping time?</a></li>
+			<li><a href="faq.html">Can you handle custom made packing?</a></li>
+			<li><a href="faq.html">Where's your company based at ?</a></li>
+			<li><a href="faq.html">Can you supply us your products regularly?</a></li>
+			<li><a href="faq.html">Many people often talk of excessive salts in coconut husk based substrates;how does your company deal with this problem?</a></li>
+			<li><a href="faq.html">Can I use Cocopeat in my present gutter system &amp; containers where I grow Roses?</a></li>
+			<li><a href="faq.html">Which is the Best Option to contact your company?</a></li>
+		</ul>
+		</div>
+		
+		<div class="newsletter"><h2>Newsletter</h2>
+			<input type="text" /> <input type="button" value="Subscribe" />
+		</div>
+	</div>
+</div>
+<div class="bottomshade"></div>
+<div style="clear:both;"></div>
+<div class="footer">
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+		<!--<td>Find us elsewhere</td>-->
+		<td align="right">SV Coir Exports    2013<!--  |  Privacy Policy--><br />
+			<a href="about.html">About Us</a> |  <a href="about-cocopeat.html">About Cocopeat</a> |  <a href="compressed-cocopeat-bales.html">Compressed Cocopeat Bales</a>  |  <a href="coconut-fiber-120kgs.html">Compressed Cocopeat Briquettes</a>  |  <a href="coconut-fiber-50kgs.html">Coconut Fiber</a>  |  <a href="curled-coir.html">Curled Coir</a>  |  <a href="quality-control.html">Quality Control</a> |  <a href="manufacturing.html">Manufacturing</a> <!--|  <a href="photo-gallery.html">Photos</a>--> <!--|  <a href="#">Support</a>--> |  <a href="faq.html">FAQs</a> |  <a href="contact.html">Contact</a><!-- |  <a href="#">Sitemap</a>--></td>
+	</tr>
+</table>
+</div>
+<div class="btmmargin"></div>
+<!--1st anchor link and menu -->
+<div id="submenu1" class="anylinkcss">
+	<ul>
+		<li><a href="compressed-cocopeat-bales.html">Compressed Cocopeat Bales</a></li>
+		<li><a href="coconut-fiber-50kgs.html">Coconut Fiber 50 kgs</a></li>
+		<li><a href="coconut-fiber-120kgs.html">Coconut Fiber 120 kgs</a></li>
+		<li><a href="curled-coir.html">Curled Coir</a></li>
+		<li><a href="coir-yarn.html">Coir Yarn</a></li>
+		<li><a href="cocopeat-composed.html">Cocopeat compost</a></li>
+	</ul>
+</div>
+</body>
+</html>
